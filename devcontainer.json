@@ -1,0 +1,21 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Python 3 & Chrome",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/chrome:1": {}
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "facebook_creator.py"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
